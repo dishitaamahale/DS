@@ -1,0 +1,55 @@
+WEB SERVICE
+
+service(server) servlet clients
+
+in netbeans:
+
+
+file -> new proj -> java web -> web application
+give name
+glassFish server, java ee 7
+finish
+
+right click -> new web service
+give name, package com.myservice
+
+web service wali file pe right click
+add operation 
+change return
+
+created proj pe right click
+build
+deploy
+
+web service right click test web service
+
+====================================================
+
+file -> new proj -> java web -> web application
+give name (client)
+
+client ke index.html ke body me
+windows -> ide tools -> palette
+form action CalculatorServlet, method get
+button ke liye <input type="subit" value="Submit">
+
+
+proj pe right click -> new web service client
+proj browse, package default
+
+client proj pe right click
+new -> servlet -> name CalculatorServlet
+check checkbox
+
+in CalculatorServlet.java file
+drag drop saare operations
+
+phir 
+double num1, num2;
+num1=Double.parseDouble(request.getParameter("number1"));
+num2=Double.parseDouble(request.getParameter("number2"));
+op mein call 4 operations
+addition(num1,num2) and so on
+
+client proj ko clean and build
+form wale index.html, right click and run file`
